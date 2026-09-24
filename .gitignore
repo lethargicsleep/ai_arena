@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+summary.txt
+plan.txt
+.venv/
+architecture.txt
