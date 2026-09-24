@@ -1,0 +1,13 @@
+arena_project/
+├── main.py              # точка входа, сборка + запуск
+├── config.py            # все константы и настройки
+├── prompts.py           # тексты промптов (PROMPT_DIRECTOR, PROMPT_JUDGE, PROMPT_CORRECTOR)
+├── llm.py               # обёртка над ollama + generate_creative / generate_correction
+├── parser.py            # extract_tag + parse_director_event
+├── storage.py           # FileStorage: append_epoch, read_all
+├── simulator.py         # цикл эпохи: директор → диалог → судья → корректор → запись
+├── tests/
+│   └── test_parser.py   # юнит-тесты на парсер
+├── summary.txt          # лог эпох (создаётся автоматически)
+├── README.md            # описание, как запустить
+└── .gitignore           # игнор для __pycache__, venv, summary.txt
